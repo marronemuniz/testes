@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Validação & Testes JS</title>
+  <link rel="stylesheet" href="test4.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <h2>Criar Conta</h2>
+    <p class="subtitle">Preencha os campos para validar seu cadastro.</p>
+
+
+    <form id="cadastroForm" novalidate>
+     
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" placeholder="Ex: Maria Silva">
+        <span class="erro-msg" id="erro-nome"></span>
+      </div>
+
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com">
+        <span class="erro-msg" id="erro-email"></span>
+      </div>
+
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Mínimo 6 caracteres e 1 número">
+        <span class="erro-msg" id="erro-senha"></span>
+      </div>
+
+
+      <button type="submit" class="btn-efeito">
+        <span>Cadastrar</span>
+      </button>
+    </form>
+
+
+    <div id="sucesso-geral" class="sucesso-msg" style="display: none;">
+      ✨ Cadastro realizado com sucesso!
+    </div>
+  </div>
+
+
+  <script src="test4.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Teste de Unidade JS</title>
+</head>
+<body>
+<h2>Teste de Soma</h2>
+<script>
+function soma(a, b) {
+return a + b;
+}
+// Teste automatizado simples
+function testarSoma() {
+console.assert(soma(2, 2) === 4, "Teste 1 falhou!");
+console.assert(soma(-1, 1) === 0, "Teste 2 falhou!");
+console.assert(soma(10, 5) === 15, "Teste 3 falhou!");
+console.log("Todos os testes de soma passaram!");
+}
+testarSoma();
+</script>
+</body>
+</html>
